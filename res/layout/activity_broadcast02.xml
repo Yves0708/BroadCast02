@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12sp"
+        android:gravity="center_horizontal"
+        android:text="Broadcast02 Panel"
+        android:textSize="24sp"
+        android:background="@drawable/retangle_drawable" />
+
+    <TableLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12sp"
+        android:background="@drawable/retangle_drawable"
+        android:stretchColumns="1" >
+        
+        <TableRow>
+            <TextView
+                style="@style/table_style"
+                android:text="TIME TICK:" />
+    
+            <Switch 
+                android:id="@+id/timetick_switch"
+                android:onClick="clickTimeTickSwitch"
+                style="@style/table_style" />
+        </TableRow>
+        
+        <TableRow>
+            <TextView
+                style="@style/table_style"
+                android:text="TIME TICK SERVICE:" />
+    
+            <Switch 
+                android:id="@+id/timetick_service_switch"
+                android:onClick="clickTimeTickServiceSwitch"
+                style="@style/table_style" />
+        </TableRow>
+        
+        <TableRow>
+            <TextView
+                style="@style/table_style"
+                android:text="BOOT COMPLETED SERVICE:" />
+    
+            <Switch 
+                android:id="@+id/boot_service_switch"
+                android:onClick="clickBootServiceSwitch"
+                style="@style/table_style" />
+        </TableRow>
+        
+        <TableRow>
+            <TextView
+                style="@style/table_style"
+                android:text="PHONE STATE SERVICE:" />
+    
+            <Switch 
+                android:id="@+id/phonestate_service_switch"
+                android:onClick="clickPhoneStateServiceSwitch"
+                style="@style/table_style" />
+        </TableRow>
+    </TableLayout>
+    
+</LinearLayout>
